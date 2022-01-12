@@ -1,0 +1,25 @@
+{
+  "name": "empty-v13",
+  "version": "1.0.0",
+  "description": "rootcf v13 Empty Bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rootcf/discord.js-v13-bot"
+  },
+  "keywords": [
+    "rootcf"
+  ],
+  "author": "rootcf",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.5.1",
+    "fs": "^0.0.1-security",
+    "pretty-ms": "^7.0.1"
+  }
+}
