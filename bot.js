@@ -17,6 +17,7 @@ for (let file of getFiles) {
 
 client.on('messageCreate', async (message, args) => {
     if (message.author.bot) return;
+    if (!message.guild) return;
     let _message = message.content.split(' ');
     if (_message[0].startsWith(prefix)) {
         let _prefix = _message[0].substring(0, prefix.length)
