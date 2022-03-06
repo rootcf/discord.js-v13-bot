@@ -4,7 +4,8 @@
   "description": "rootcf v13 Empty Bot",
   "main": "bot.js",
   "scripts": {
-    "test": "node bot.js"
+    "test": "node bot.js",
+    "start":"node bot.js"
   },
   "repository": {
     "type": "git",
