@@ -24,7 +24,7 @@ client.on('messageCreate', async (message, args) => {
         let command = _message[0].substring(prefix.length, _message[0].length)
         try {
             if (client.commands.has(command))
-                if (client.commands.get(command).owneronly == 1 && message.author.id != owner)
+               if (client.commands.get(command).owneronly == 1 && message.author.id != owner)
                     return;
                 else if (client.commands.get(command).owneronly == 1 && message.author.id == owner)
                     client.commands.get(command).run(client, message, args, message.author)
@@ -35,7 +35,7 @@ client.on('messageCreate', async (message, args) => {
             else
                 if (client.alias.get(command).owneronly == 1 && message.author.id != owner)
                     return;
-                else if (client.alias.get(command).owneronly == 1 && message.author.id == owner)
+                else 
                     client.alias.get(command).run(client, message, args, message.author)
         }
         catch (err) {
